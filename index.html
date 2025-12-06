@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Learn jQuery With Project| Class-29</title>
+	
+			  <!--BS CDN -->
+			  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+			  <!--Font Awsome CDN-->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+				<!-- SmartMenus core CSS (required) -->
+		    <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+		    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+		    <link href="css/sm-blue.css" rel="stylesheet" type="text/css" />
+
+		    <!-- YOU DO NOT NEED THIS - demo page content styles -->
+		    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+
+        <!--Header jQuery-->
+
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" />
+        <link rel="stylesheet" href="css/hamburgers.min.css" />
+
+         <!--Header.CSS-->
+
+         <link rel="stylesheet" type="text/css" href="css/header.css">           
+           <!--Slider.CSS-->
+         
+         <link href="css/base.css" rel="stylesheet">
+          
+          <!-- about CSS -->
+
+          <link rel="stylesheet" type="text/css" href="css/about.css">
+
+          <!-- Team CSS -->
+          <link rel="stylesheet" type="text/css" href="css/team.css">
+          
+          <!-- Pricing CSS -->
+
+          <link rel="stylesheet" type="text/css" href="css/pricing.css">
+
+          <!-- Blog CSS -->
+          <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+          <!-- Gellary CSS -->
+          <link rel="stylesheet" type="text/css" href="css/gallary.css">
+
+          <!-- Contract CSS -->
+          <link rel="stylesheet" type="text/css" href="css/contract.css">
+
+
+        <!--Main CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+      
+			</head>
+	<body>
+
+      <!-- Main div -->
+
+      <div class="main-container">
+
+        <nav class="main-menu-holder cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            <ul class="main-menu mobile">
+                <li><a href="javascript:;" data-item="home">Home</a></li>
+                <li><a href="javascript:;" data-item="about">About</a></li>
+                <li><a href="javascript:;" data-item="team">Team</a></li>
+                <li><a href="javascript:;" data-item="pricing">Pricing</a></li>
+                <li><a href="javascript:;" data-item="gallery">Gallery</a></li>
+                <li><a href="javascript:;" data-item="blog">Blog</a></li>
+                <li><a href="javascript:;" data-item="contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+       <header class="header group">
+            <div class="wrapper">
+                <div class=" row">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <a href="javascript:;" class="logo logo--small uppercase left" data-item="team">Stoocky</a>
+                            <nav class="right">
+                                <ul class="main-menu desktop">
+                                    <li><a href="javascript:;" data-item="home">Home</a></li>
+                                    <li><a href="javascript:;" data-item="about">About</a></li>
+                                    <li><a href="javascript:;" data-item="team">Team</a></li>
+                                    <li><a href="javascript:;" data-item="pricing">Pricing</a></li>
+                                    <li><a href="javascript:;" data-item="gallery">Gallery</a></li>
+                                    <li><a href="javascript:;" data-item="blog">Blog</a></li>
+                                    <li><a href="javascript:;" data-item="contacts">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <button id="showRightPush" class="hamburger hamburger--spin right" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+   
+        <!-- Start Slider -->
+
+        <!-- section--basic Class Name -->
+
+        <section id="home" class="section ">
+            <div class="wrapper">
+                <div class="row center-x6">
+                    <div class="col-xs-12">
+                        <div class="box">
+                           <div class="col-md-10 offset-md-12">                             
+                              <div class="container py-2">
+                                <div class="row">                                  
+                                    <div id="main-carousel" class="carousel slide">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                        <img src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain" class="d-block w-100" alt=" Image Alt 1" title="Image Alt 1">
+                                        
+                                        <div class="carousel-caption d-none d-md-block">
+                                        <h3>Welcome To JH Global Technology Ltd</h3>
+                                        <p style="text-align:center;">Fast Service Is The Goal</p>
+                                        </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img lazy-src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" class="d-block w-100" alt="Image Alt 2" title="Image Alt 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                        <h3>Welcome To JH Global Technology Ltd</h3>
+                                        <p style="text-align:center;">Fast Service Is The Goal</p>
+                                        </div>
+                                         </div>
+                                        <div class="carousel-item">
+                                        <img lazy-src="https://www.esikkimtourism.in/wp-content/uploads/2019/04/image1-1.jpg" class="d-block w-100" alt="Image Alt 3" title="Image Alt 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                        <h3>Welcome To JH Global Technology Ltd</h3>
+                                        <p style="text-align:center;">Fast Service Is The Goal</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img lazy-src="https://www.esikkimtourism.in/wp-content/uploads/2019/04/lakes.jpg" class="d-block w-100" alt="    Image Alt 4" title="Image Alt 4">
+                                        <div class="carousel-caption d-none d-md-block">
+                                        <h3>Welcome To JH Global Technology Ltd</h3>
+                                        <p style="text-align:center;">Fast Service Is The Goal</p>
+                                        </div>
+                                        </div>
+                                       <div class="carousel-item">
+                                        <img lazy-src="https://media2.thrillophilia.com/images/photos/000/013/577/original/1571302066_Sikkim.jpg?width=975&height=600" class="d-block w-100" alt="Image Alt 5" title="Image Alt 5">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h3>Welcome To JH Global Technology Ltd</h3>
+                                          <p style="text-align:center;">Fast Service Is The Goal</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="loading d-none"><img src="img/black.png" alt="loading"></div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                       </button>
+                                       <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!--End Slider  -->
+
+      <!-- Start About  -->
+
+       <section id="about" class="section section--white">
+            <div class="wrapper">
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="responsive-container-block bigContainer">
+                                <div class="responsive-container-block Container bottomContainer">
+                                  <div class="ultimateImg">
+                                    <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp4.svg">
+                                    <div class="purpleBox">
+                                      <p class="purpleText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus.
+                                      </p>
+                                      <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
+                                    </div>
+                                  </div>
+                                  <div class="allText bottomText">
+                                    <h1 style="font-size: 50px; padding: 20px;" class="text-blk headingText">
+                                      About Me
+                                    </h1>
+                                    <p class="text-blk subHeadingText">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="text-blk description">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
+                                    </p>
+                                    <a class="explore">
+                                      View Services
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+          <!-- End About  -->
+         
+          <!-- Start Team Section -->
+
+        <section id="team" class="section section--basic">
+            <div class="wrapper">
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="responsive-container-block container">
+                              <p class="text-blk team-head-text">
+                                Our Team
+                                 </p>
+                                  <div class="responsive-container-block">
+                                  <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                  <div class="team-image-wrapper">
+                                  <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+                                  </div>
+                                  <p class="text-blk name">
+                                   Davis George
+                                  </p>
+                                  <p class="text-blk position">
+                                  CEO
+                                  </p>
+                                  <p class="text-blk feature-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  </p>
+                                  <div class="social-icons">
+                                  <a href="https://www.twitter.com" target="_blank">
+                                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                  </a>
+                                  <a href="https://www.facebook.com" target="_blank">
+                                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                  </a>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+                                        </div>
+                                          <p class="text-blk name">
+                                            Davis George
+                                             </p>
+                                              <p class="text-blk position">
+                                             CEO
+                                          </p>
+                                         <p class="text-blk feature-text">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                       <div class="social-icons">
+                                          <a href="https://www.twitter.com" target="_blank">
+                                            <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                            </a>
+                                            <a href="https://www.facebook.com" target="_blank">
+                                         <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+                                        </div>
+                                          <p class="text-blk name">
+                                             Davis George
+                                          </p>
+                                        <p class="text-blk position">
+                                        CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                                    </div>
+                                    <p class="text-blk name">
+                                      Davis George
+                                    </p>
+                                    <p class="text-blk position">
+                                      CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+                                    </div>
+                                    <p class="text-blk name">
+                                      Davis George
+                                    </p>
+                                    <p class="text-blk position">
+                                      CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+                                    </div>
+                                    <p class="text-blk name">
+                                      Davis George
+                                    </p>
+                                    <p class="text-blk position">
+                                      CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                                    </div>
+                                    <p class="text-blk name">
+                                      Davis George
+                                    </p>
+                                    <p class="text-blk position">
+                                      CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                                  <div class="card">
+                                    <div class="team-image-wrapper">
+                                      <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+                                    </div>
+                                    <p class="text-blk name">
+                                      Davis George
+                                    </p>
+                                    <p class="text-blk position">
+                                      CEO
+                                    </p>
+                                    <p class="text-blk feature-text">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="social-icons">
+                                      <a href="https://www.twitter.com" target="_blank">
+                                        <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                                      </a>
+                                      <a href="https://www.facebook.com" target="_blank">
+                                        <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <!-- End Team Section -->
+        <!-- Start Pricing Section -->
+
+       <section id="pricing" class="section section--white">
+            <div class="wrapper">
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <div class="box">                           
+                           <div class="pricing_3">
+                              <div class="responsive-container-block big-container">
+                                <div class="responsive-container-block container">
+                                  <p class="text-blk head">
+                                    Pricing
+                                     </p>
+                                      <div class="responsive-container-block swiping-box">
+                                       <div class="text-center witch switch-text">
+                                        <span id="ij1jwd">
+                                        Monthly
+                                        </span>
+                                        <div class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round">
+                                        </span>
+                                      </div>
+                                      <span>
+                                        Yearly
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="responsive-container-block card-container">
+                                    <div class="responsive-cell-block wk-desk-3 wk-tab-6 wk-mobile-12 wk-ipadp-6" id="i01zx">
+                                      <div class="card card-selected" id="price-3-card-1">
+                                        <div class="card-header">
+                                          <div id="iu7cq">
+                                            Vitae quis id phasellus.
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="card-text">
+                                            <div class="price">
+                                              <span class="monthly-plan">
+                                                $5
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                $450
+                                              </span>
+                                            </div>
+                                            <div class="card-details">
+                                              <span class="monthly-plan">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod velit est.
+                                                <br>
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem orci tempor donec vel.
+                                                <br>
+                                              </span>
+                                            </div>
+                                            <br>
+                                            <span class="buy-button">
+                                              <button class="btn" type="button">
+                                                Get
+                                              </button>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="responsive-cell-block wk-desk-3 wk-tab-6 wk-mobile-12 wk-ipadp-6" id="ihb3h">
+                                      <div class="card" id="price-3-card-1-2">
+                                        <div class="card-header">
+                                          <div>
+                                            Vitae quis id phasellus.
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="card-text">
+                                            <div class="price">
+                                              <span class="monthly-plan">
+                                                $5
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                $450
+                                              </span>
+                                            </div>
+                                            <div class="card-details">
+                                              <span class="monthly-plan">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod velit est.
+                                                <br>
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem orci tempor donec vel.
+                                                <br>
+                                              </span>
+                                            </div>
+                                            <br>
+                                            <span class="buy-button">
+                                              <button class="btn" type="button">
+                                                Get
+                                              </button>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="responsive-cell-block wk-desk-3 wk-tab-6 wk-mobile-12 wk-ipadp-6" id="inxin">
+                                      <div class="card" id="price-3-card-1-3">
+                                        <div class="card-header">
+                                          <div>
+                                            Vitae quis id phasellus.
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="card-text">
+                                            <div class="price">
+                                              <span class="monthly-plan">
+                                                $5
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                $450
+                                              </span>
+                                            </div>
+                                            <div class="card-details">
+                                              <span class="monthly-plan">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod velit est.
+                                                <br>
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem orci tempor donec vel.
+                                                <br>
+                                              </span>
+                                            </div>
+                                            <br>
+                                            <span class="buy-button">
+                                              <button class="btn" type="button">
+                                                Get
+                                              </button>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="responsive-cell-block wk-desk-3 wk-tab-6 wk-mobile-12 wk-ipadp-6" id="ih2kk">
+                                      <div class="card" id="price-3-card-1-4">
+                                        <div class="card-header">
+                                          <div>
+                                            Vitae quis id phasellus.
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="card-text">
+                                            <div class="price">
+                                              <span class="monthly-plan">
+                                                $5
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                $450
+                                              </span>
+                                            </div>
+                                            <div class="card-details">
+                                              <span class="monthly-plan">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod velit est.
+                                                <br>
+                                              </span>
+                                              <span class="yearly-plan d-none">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem orci tempor donec vel..
+                                                <br>
+                                                </span>
+                                                </div>
+                                                <br>
+                                                <span class="buy-button">
+                                                  <button class="btn" type="button">
+                                                    Get
+                                                  </button>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>                                                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Start Gallary -->
+
+          <section id="gallery" class="section section--basic">
+              <div class="wrapper">
+                   <div class="row center-xs">
+                      <div class="col-xs-12">
+                          <div class="box">
+      <div class="gallery_1" unique-script-id="w-w-dm-id">
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <p class="text-blk heading">
+          Gallery
+        </p>
+        <p class="text-blk subHeading">
+          Lorem ipsum dolor sit amet, consect etur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al
+        </p>
+        <div class="responsive-container-block imgContainer">
+          <div class="project project1">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb2.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb2.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project2">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb7.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb7.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project3">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb3.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb3.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project4">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb6.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb6.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project5">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb4.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb4.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project6">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb5.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb5.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                                               </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                 </section>
+
+                                 <!-- End Gallary -->
+
+                                        <!-- blog  -->
+                                        <section id="blog" class="section section--white">
+                                              <div class="wrapper">
+                                                 <div class="row center-xs">
+                                                      <div class="col-xs-12">
+                                                         <div class="box">
+                        
+                          <main>
+                                <h1>Blog Post List</h1>
+                                
+                                <div class="post-list post-list_grid">
+                                
+                                  <!-- Post 1  -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-16" class="post__time">november 16, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit ameLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor Blog post title</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">7</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 2 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-15"  class="post__time">november 15, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit ameLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturt consecteturur</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">12</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 3 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1495987976467-244d20b4b39a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-14"  class="post__time">november 14, 2019</time>
+                                      <h2><a href="#">Cum Lorem ipsum dolor sit amet consectetLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit ameLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturt consecteturur sociis natoque penatibus et</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">9</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 4--->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1483546363825-7ebf25fb7513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-13"  class="post__time">november 13, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetuer</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">5</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 5 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1474291102916-622af5ff18bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-12"  class="post__time">november 12, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetuer</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">4</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 6 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-11"  class="post__time">november 11, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetuer</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">5</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 7 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-10"  class="post__time">november 10, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetuer</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">7</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Post 8 -->
+                                  <div class="post-list__post post">
+                                    <figure class="post__preview-img">
+                                      <a href="#"><img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80" alt="img description" /></a>
+                                    </figure>
+                                    
+                                    <div class="post__header">
+                                      <time datetime="2019-11-09"  class="post__time">november 09, 2019</time>
+                                      <h2><a href="#">Lorem ipsum dolor sit amet consectetuer</a></h2>
+                                    </div>
+                                    
+                                    <div class="post__meta">
+                                      <a href="#">CategoryName</a>
+                                      <a href="#" class="post__comments">15</a>
+                                    </div>
+                                  </div>
+                                  
+                                </div><!-- / .post-list -->
+                                
+                              </main>
+
+                          </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+<!--End Blog  -->
+
+   <!-- Start Contract -->
+
+       <section id="contacts" class="section section--basic">
+            <div class="wrapper">
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <div class="box">
+                                                      <div class="landing_page">
+                            <div class="responsive-container-block big-container">
+                              <img class="bg-img" id="iq5bf" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/clothes-bg.png">
+                              <div class="responsive-container-block container">
+                                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+                                  <div class="content-box">
+                                    <p class="text-blk section-head">
+                                      Lorem ipsum amet dolor
+                                    </p>
+                                    <p class="text-blk section-subhead">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis volupta
+                                    </p>
+                                    <div class="icons-container">
+                                      <a class="share-icon">
+                                        <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+                                      </a>
+                                      <a class="share-icon">
+                                        <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+                                      </a>
+                                      <a class="share-icon">
+                                        <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+                                      </a>
+                                      <a class="share-icon">
+                                        <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
+                                  <form class="form-box">
+                                    <div class="container-block form-wrapper">
+                                      <p class="text-blk contactus-head">
+                                        <a class="link" href="">
+                                        </a>
+                                        Get a quote
+                                      </p>
+                                      <p class="text-blk contactus-subhead">
+                                        We will get back to you in 24 hours
+                                      </p>
+                                      <div class="responsive-container-block">
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
+                                          <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i1ro7">
+                                          <input class="input" id="indfi-5" name="Last Name" placeholder="Last Name">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
+                                          <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
+                                        </div>
+                                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                                          <input class="input" id="imgis-6" name="PhoneNumber" placeholder="Phone Number">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
+                                          <textarea aria-placeholder="Type message here" class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
+                                        </div>
+                                      </div>
+                                      <button class="submit-btn">
+                                        Get quote
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- End Contract -->
+
+       <footer class="footer group">
+            <div class="wrapper">
+                <div class=" row">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            © 2025 Copyright |
+                            Recipe on <a href="https://github.com/nadezhda-devlabs/jquery-stoocky-page">JH Global Developer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+       <!-- jQuery CDN -->
+     
+	    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+
+
+			<!-- JS Main -->
+		  <script src="js/test.js"></script>
+
+		  <!--BT JS CDN-->
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Start Header JS -->
+
+			<script src="js/jquery.stoocky-page.js"></script>
+      <script src="js/classie.js"></script>
+      <script src="js/script.js"></script>
+
+      <script type="text/javascript">
+
+        /*
+         * Plugins Initialisation
+         */
+        $('body').stoockyPage();
+
+        /*
+         * Plugins initialisation in case you want to change the default settings
+         */
+        // $('body').stoockyPage({
+        //     stickyElem   : {
+        //         active            : true,
+        //         elToFix           : 'header',
+        //         classToFix        : 'header--fixed'
+        //     },
+        //     scrollToElem    : {
+        //         active            : true,
+        //         item              : '.main-menu > li > a',
+        //         animDuration      : 500,
+        //     },
+        //     itemHighlighter : {
+        //         active            : true,
+        //         item              : '.main-menu > li > a',
+        //         lastItem          : '.main-menu > li:last-child > a',
+        //         classToHighlight  : 'active'
+        //     }
+        // });
+
+          </script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+          <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1VDDWMRSTH');
+          </script>
+          <script>
+                    try {
+                      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+                        return true;
+                      }).catch(function(e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                      });
+                    } catch (error) {
+                      console.log(error);
+                    }
+          </script>
+
+          <!-- End Header JS -->
+          <!-- Start Slider JS -->
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+            
+          </script>
+            <script src="js/lazy-bootstrap-carousel-v5.js"></script>
+            <script src="js/base.js"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1VDDWMRSTH');
+            </script>
+            <script>
+            try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", 
+            { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+            return true;
+            }).catch(function(e) {
+           var carbonScript = document.createElement("script");
+           carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+           carbonScript.id = "_carbonads_js";
+           document.getElementById("carbon-block").appendChild(carbonScript);
+           });
+           } catch (error) {
+           console.log(error);
+           }
+          </script>
+
+            <!-- End Slider JS -->
+
+            <!-- Start Blog  JS-->
+
+
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+
+        const like = document.getElementById('like_btn');
+        const singleClick = () => {
+            like.style.fontWeight = 'bold';
+            like.style.background = '#bbe1fa';
+            like.style.color = '#1b262c';
+            like.innerHTML = "✓ Liked";
+        }
+        const doubleClick = () => {
+            like.style.fontWeight = 'normal';
+            like.style.background = '#3282b8';
+            like.style.color = '#fff';
+            like.innerHTML = "Like";
+        }
+        var clickCount = 0;
+        like.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 1) {
+                singleClickTimer = setTimeout(function() {
+                    clickCount = 0;
+                    singleClick();
+                }, 400);
+            } else if (clickCount === 2) {
+                clearTimeout(singleClickTimer);
+                clickCount = 0;
+                doubleClick();
+            }
+        }, false);
+        // show and hide the replies
+        const reply = (rep) => {
+            console.log('hi');
+            // debugger;
+            var res = document.getElementById(rep);
+            console.log(res);
+            if (res.className == "replies") {
+                res.className = "thapa_show";
+                res.style.WebkitTransition = 'all 0.3s ease';
+                // res.style.transition = 'all 0.3s ease';
+                // console.log(thapa_show);
+            } else if (res.className == 'thapa_show') {
+                // res.className = " ";
+                console.log('thapa show');
+                res.className = "replies";
+            }
+        }
+        </script>
+         <!-- End Blog  JS-->
+
+ <!-- Start Pricing JS-->
+
+        <script src="js/pricing.js"></script>
+
+
+        <script src="js/gallary.js"></script>
+
+        <!-- End Pricing JS-->
+
+       
+          
+
+                  
+  </body>
+</html>
